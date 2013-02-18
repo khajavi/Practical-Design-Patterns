@@ -1,4 +1,4 @@
-#source: https://github.com/wxjeacen/DesignPattern.git
+//source: https://github.com/wxjeacen/DesignPattern.git
 
 #include <iostream>
 #include "AbstractFactory.hpp"
