@@ -1,3 +1,5 @@
+#source: https://github.com/wxjeacen/DesignPattern.git
+
 #ifndef ABSTRACTFACTORY_H
 #define ABSTRACTFACTORY_H
 
