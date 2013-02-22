@@ -1,0 +1,3 @@
+[submodule "Design-Patterns.wiki"]
+	path = Design-Patterns.wiki
+	url = git@github.com:khajavi/Design-Patterns.wiki.git
