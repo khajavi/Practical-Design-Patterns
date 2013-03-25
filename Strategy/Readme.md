@@ -21,7 +21,7 @@
 3. Context
 
 ## Diagram
-![StrategyPattern](wiki/img/StrategyStructure.gif)
+![StrategyPattern](img/StrategyStructure.gif)
 
 ![Strategy Pattern](http://yuml.me/diagram/scruffy;/class/// Non-specific Strategy Class Diagram, [Caller]<>->[<<Interface>>;Algorithm], [<<Interface>>;Algorithm]^-.-[ConcreteAlgorithm1], [<<Interface>>;Algorithm]^-.-[ConcreteAlgorithm2])
 
