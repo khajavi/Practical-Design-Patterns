@@ -14,7 +14,7 @@
 
 ## ساختار
 ![Factory Method Pattern](http://yuml.me/f1b5a95b)
-![Factory Method](wiki/img/FactoryMethod.jpg)
+![Factory Method](img/FactoryMethod.jpg)
 
 
 ## مثال ۱- ساخت موبایل از دو کارخانهٔ متفاوت

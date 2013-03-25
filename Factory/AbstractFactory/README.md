@@ -4,7 +4,7 @@
 2. The job of an `Abstract Factory` is to define an interface for creating `set of products`.
 
 ![Abstract Factory](http://yuml.me/9c9bd813)
-![Abstract Factory 2](wiki/img/AbstractFactory.jpg)
+![Abstract Factory 2](img/AbstractFactory.jpg)
 
 ## مثال
 

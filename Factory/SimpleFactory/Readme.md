@@ -12,9 +12,9 @@
 1. Multiple Clinets neeeding same types of object
 2. Ensure consistent object initialization.
 
-![SimpleFactory](wiki/img/simplefactorystructure.gif)
-![Simple Factory](wiki/img/SimpleFactory.jpg)
-![Simple Factory Diagram](wiki/img/SimpleFactory.png)
+![SimpleFactory](img/simplefactorystructure.gif)
+![Simple Factory](img/SimpleFactory.jpg)
+![Simple Factory Diagram](img/SimpleFactory.png)
 
 ### Keywords:
 1. Depenency
