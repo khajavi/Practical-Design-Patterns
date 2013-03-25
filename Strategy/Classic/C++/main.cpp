@@ -27,6 +27,10 @@ public:
 	Context(Strategy* strategy)
 		: _strategy(strategy) {
 	}
+	
+	void changeStrategy(Strategy* strategy) {
+		_strategy = strategy;
+	}
 
 	void ContextInterface() {
 		if ( NULL != _strategy) {
@@ -42,6 +46,8 @@ private:
 int main (int argc, char const* argv[]) {
 	
 	Context* context = new Context(new ConcreteStrategyA());
+	context->ContextInterface();
+	context->changeStrategy(new ConcreteStrategyB());
 	context->ContextInterface();
 
 	return 0;
