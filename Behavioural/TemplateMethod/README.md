@@ -6,6 +6,9 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 
 در این الگو ساختار اصلی الگوریتم را در متدی به نام TemplateMethod طراحی می‌کنیم. این متد دارای یک سری عملیات اولیه (Primitive Operations) است. این متد را دسترسی پابلیک می‌دهیم و تمامی عملیات اولیه را ابسترکت و protected می‌کنیم تا کلاس‌های کانکرت به دلخواه خود توابع اولیهٔ مناسب خود را طراحی کنند.
 
+# ساختار
+![UML Structure](http://yuml.me/77419b3e)
+
 # Participants
 ## AbstractClass 
 1. عملیات اولیه را به صورت ابسترکت «معرفی» می‌کند.
@@ -15,6 +18,7 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 هر کانکرت کلاسی، عملیات اولیه را مطابق کلاس خود پیاده سازی می‌کند.
 
 # مثال (تولید کنندهٔ سند)
+![DocumentGenerator](http://yuml.me/40441c19)
 روال تولید سند برای انواع و اقسام سندها یکسان است.
 1. فسمت Header سند را تولید کن.
 2. قسمت بدنهٔ سند را تولید کن.
