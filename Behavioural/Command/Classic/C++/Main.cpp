@@ -27,15 +27,29 @@ private:
 
 class ConcreteCommand : public Command {
 public:
-	ConcreteCommand(Receiver* receiver);
+	ConcreteCommand(Receiver* receiver)
+		:_receiver(receiver) {
 
-	virtual void execute();
+	}
+
+	virtual void execute() {
+		_receiver->action();
+
+		cout << "Execute by ConcreteCommand" << endl;
+	}
 private:
 	Receiver* _receiver;
 };
 
+
 int main (int argc, char const* argv[]) {
 	
+	Receiver* receiver = new Receiver();
+	Command* command = new ConcreteCommand( receiver );
+	Invoker* invoker = new Invoker( command );
+
+	invoker->invoke();
+
 
 	return 0;
 }
