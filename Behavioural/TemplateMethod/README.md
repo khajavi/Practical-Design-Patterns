@@ -8,8 +8,8 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 
 # Participants
 1. AbstractClass 
-	1. عملیات اولیه را به صورت ابسترکت «معرفی» می‌کند.
-	2. متد TemplateMethod را که ساختار الگوریتم است را «پیاده‌سازی» می‌کند.
+    1. عملیات اولیه را به صورت ابسترکت «معرفی» می‌کند.
+    2. متد TemplateMethod را که ساختار الگوریتم است را «پیاده‌سازی» می‌کند.
 2. ConcreteClass
 هر کانکرت کلاسی، عملیات اولیه را مطابق کلاس خود پیاده سازی می‌کند.
 
