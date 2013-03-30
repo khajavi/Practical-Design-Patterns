@@ -7,49 +7,71 @@ public:
 };
 
 //Receiver
-class Light {
+class Receiver {
+public:
+	virtual void switchOn() = 0;
+	virtual void switchOff() = 0;
+};
+
+class Light : public Receiver {
 public:
 	void switchOn() {
-		on = true;
+		_on = true;
 		cout << "Light is switched on" << endl;
 	}
 
 	void switchOff() {
-		on = false;
+		_on = false;
 		cout << "Light is switched off" << endl;
 	}
 private:
-	bool on;
+	bool _on;
 };
 
-//ConcreteCommand1
-class LightOnCommand : public Command {
+class Television : public Receiver {
 public:
-	LightOnCommand(Light* light)
-		:_light(light) {
+	void switchOn() {
+		_on = true;
+		cout << "Television is switched on" << endl;
 	}
-
-	void execute() {
-		_light->switchOn();
+	
+	void switchOff() {
+		_on = false;
+		cout << "Television is switched off" << endl;
 	}
 
 private:
-	Light* _light;
+	bool _on;
+};
+
+//ConcreteCommand1
+class OnCommand : public Command {
+public:
+	OnCommand(Receiver* receiver)
+		:_receiver(receiver) {
+	}
+
+	void execute() {
+		_receiver->switchOn();
+	}
+
+private:
+	Receiver* _receiver;
 };
 
 
 //ConcreteCommand2
-class LightOffCommand : public Command {
+class OffCommand : public Command {
 public:
-	LightOffCommand(Light* light)
-		:_light(light) {
+	OffCommand(Receiver* receiver)
+		:_receiver(receiver) {
 	}
 
 	void execute() {
-		_light->switchOff();
+		_receiver->switchOff();
 	}
 private:
-	Light* _light;
+	Receiver* _receiver;
 };
 
 //Invoker
@@ -72,18 +94,32 @@ private:
 int main() {
 	RemoteControl* control = new RemoteControl();
 	
-	Light* light = new Light();
+	Receiver* light = new Light();
 
-	Command* lightsOn = new LightOnCommand( light );
-	Command* lightsOff = new LightOffCommand( light );
-
-	//switch on
+	Command* lightsOn = new OnCommand( light );
+	Command* lightsOff = new OffCommand( light );
+	
+	//switch on light
 	control->setCommand( lightsOn );
 	control->pressButton();
 
-	//switch off
+	//switch off light
 	control->setCommand( lightsOff );
 	control->pressButton();
+
+	Receiver* tv = new Television();
+
+	Command* tvOn = new OnCommand( tv );
+	Command* tvOff = new OffCommand( tv );
+
+	//switch on TV
+	control->setCommand( tvOn );
+	control->pressButton();
+
+	//switch off TV
+	control->setCommand( tvOff );
+	control->pressButton();
+
 	
 	return 0;
 }
