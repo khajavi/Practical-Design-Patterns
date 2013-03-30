@@ -20,6 +20,7 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 # مثال (تولید کنندهٔ سند)
 ![DocumentGenerator](http://yuml.me/40441c19)
 روال تولید سند برای انواع و اقسام سندها یکسان است:
+
 1. فسمت Header سند را تولید کن.
 2. قسمت بدنهٔ سند را تولید کن.
 3. جزئیات سند را تولید کن.
