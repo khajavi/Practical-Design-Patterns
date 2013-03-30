@@ -1,5 +1,8 @@
+<div dir="rtl">
 # تعریف
+<div dir="ltr">
 Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+<div dir="rtl">
 
 در این الگو ساختار اصلی الگوریتم را در متدی به نام TemplateMethod طراحی می‌کنیم. این متد دارای یک سری عملیات اولیه (Primitive Operations) است. این متد را دسترسی پابلیک می‌دهیم و تمامی عملیات اولیه را ابسترکت و protected می‌کنیم تا کلاس‌های کانکرت به دلخواه خود توابع اولیهٔ مناسب خود را طراحی کنند.
 
