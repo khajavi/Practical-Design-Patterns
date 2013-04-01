@@ -10,6 +10,9 @@ Provides a way to access the elements of an aggregate object without exposing it
 3. Aggregate
 4. ConcreteAggregatge
 
+# موارد استفاده
+وقتی کالکشن‌ها و کانتینرهای متفاوتی داشته باشیم: list، vector، array، arrayList، set, multiset, queue, map, multimap و ... می‌توانیم با استفاده از Iterator یک اینترفیس یکسان برای دسترسی به محتوای این کانتینرها بنویسم. در این الگوی طراحی برای دسترسی به داده‌های کانتینرها لازم نیست از ساختمان داده‌های تک تک کانتینرها سردر بیاوریم. 
+
 # بیشتر
 1. java.util.Iterator, java.util.ArrayList
 2. [Java Iterator](http://javapapers.com/core-java/java-iterator/)
