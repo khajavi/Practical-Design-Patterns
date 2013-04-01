@@ -21,18 +21,25 @@ public:
 class AnimalIterator : public Iterator {
 public:
 	AnimalIterator( Aggregate* aggregate ) 
-		: _current( -1 ),
+		: _current( 0 ),
 		_aggregate( aggregate )
 	{
 	}
 
 	const char* next() {
+		const char* item = _aggregate->getItem( _current );
 		_current++;
-		return _aggregate->getItem( _current );
+		return item;
 	}
 
 	bool hasNext() {
-		return (_aggregate->size() != _current); 
+		if (_current >= _aggregate->size() || _aggregate->getItem(_current) == NULL) 
+			return false;
+		else 
+			return true;
+		
+		
+	//	(_aggregate->size() != _current); 
 	}
 
 private:
@@ -78,9 +85,8 @@ int main() {
 
 	Iterator* iter = aggregate->getIterator();
 
-	const char* string;
-	for (string = iter->next() ; iter->hasNext(); string = iter->next() ) {
-		cout << string << endl;
+	while( iter->hasNext() ) {
+		cout << iter->next() << endl;
 	}
 
 	return 0;
