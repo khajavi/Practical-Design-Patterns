@@ -1,3 +1,4 @@
+<div dir="rtl">
 # هدف
 Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
 
@@ -5,6 +6,9 @@ Avoid coupling the sender of a request to its receiver by giving more than one o
 ![UML](http://teddyma.cnblogs.com/images/cnblogs_com/teddyma/gof36.JPG)
 
 # Participants
+1. Handler
+2. ConcreteHandler
+3. Client
 
 # مثال ۱
 فرض کنید می‌خواهیم پرونده‌ای که رمزنگاری شده است را رمزگشایی کنیم. ما ۱۰ الگوریتم متفاوت برای رمزگشایی این پرونده طراحی کرده‌ایم. مسلماً بهترین راه این است که از الگوریتم‌های فراگیر، آسان و آن‌هایی که احتمال می‌دهیم زودتر پرونده‌مان را رمزنگاری می‌کنند شروع کنیم. بنابراین طبق سیاست‌هایی که داریم این ۱۰ الگوریتم را مرتب می‌کنیم. حال توسط `الگوی طراحی زنجیرهٔ پاسخگویی` این ۱۰ الگوریتم را به این پرونده اعمال می‌کنیم تا بالاخره یکی از این الگوریتم‌ها بتوانند پرونده‌مان را رمزگشایی کنند. توجه این که ممکن است هیچ کدام از این الگوریتم‌ها نتوانند پرونده را رمزگشایی کنند.
