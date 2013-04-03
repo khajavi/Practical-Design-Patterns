@@ -16,3 +16,7 @@ Avoid coupling the sender of a request to its receiver by giving more than one o
 # مثال ۲
 یک مثال معروف از الگوی طراحی زنجیرهٔ پاسخگویی، مبحث مدیریت استناء‌ها در زبان‌های برنامه‌نویسی شیء‌گرا مثل C++ و جاوا است.
 
+# اطلاعات بیشتر
+1. [پویش پرونده با فرمت‌های متفاوت](http://blog.sanaulla.info/2012/09/23/simple-example-to-illustrate-chain-of-responsibility-design-pattern/)
+2. [مدیریت رایانامه‌های متفاوت](http://java.dzone.com/articles/design-patterns-uncovered-chain-of-responsibility)
+3. [دو مثال خوب دیگر، شناسایی انوع پول و سکه و شناسایی اعداد](http://javapapers.com/design-patterns/chain-of-responsibility-design-pattern/)
