@@ -20,11 +20,6 @@ Virtual Constructor
 # ساختار
 ![Factory Method Pattern UML](http://javaobsession.files.wordpress.com/2010/07/factory-method.png)
 
-
-![Factory Method Pattern](http://yuml.me/f1b5a95b)
-
-
-
 # مثال
 ساخت موبایل از دو کارخانهٔ متفاوت
 
