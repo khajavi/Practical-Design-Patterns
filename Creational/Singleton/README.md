@@ -15,11 +15,12 @@
 1. کانستراکتور کلاس را پرایویت می‌کنیم تا کسی نتواند آن کلاس را خارج از کلاس new کند.
 2. داخل کلاس یک متود استاتیک تعریف می‌کنیم و تنها یک نمونه از کلاس تولید می‌کنیم. اگر قبلاً یک نمونه تولید شده بود، همان نمونهٔ قبلی را برمی‌گردانیم.
 
+# Singleton and lazy instantiation
+می‌توانیم نمونه‌سازی کلاس سینگلتون را تا زمان اولین دسترسی به تأخیر بیاندازیم. اطلاعات بیشتر: [lazy initialization](http://en.wikipedia.org/wiki/Lazy_initialization)
 
 # Multithreading and Singleton
 1. [Singleton in multi-threaded environment](http://taskinoor.wordpress.com/2011/04/18/singleton_multithreaded/)
-2. [lazy initialization](http://en.wikipedia.org/wiki/Lazy_initialization)
-3. باید این الگو را طوری به کار ببریم که thread safe باشد.
+2. باید این الگو را طوری به کار ببریم که thread safe باشد.
 
 # Double-checked locking
 در محیط‌های چند نخی، گرفتن و آزاد کردن lock خیلی هزینه‌بر است و ممکن است تعداد این درخواست‌ها خیلی خیلی زیاد شود. برای کاهش سربار lock می‌توان پس از اینکه فلگ را چک کردیم lock کنیم تا سربار کاهش یابد.
