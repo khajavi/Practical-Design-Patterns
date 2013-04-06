@@ -1,3 +1,4 @@
+<div dir="rtl">
 # Simple Factory (Idiom)
 1. Simple Factory returns instances of classes that have the same methods. They may be instances of different derived subclasses, or they may in fact be unrelated classes that just share the same interface. Either way, the methods in these class instances are the same and can be used interchangeably.
 2. Simple Factory یک الگوی طراحی واقعی نیست. اما به عنوان یک idiom برنامه‌نویسی بسیار رایج به کار گرفته می‌شود.
@@ -8,7 +9,8 @@
 7. استفاده از new یک نوع برنامه‌نویسی مرتبط با پیاده‌سازی‌ست تا یک برنامه‌نویسی مرتبط به اینترفیس. (کد شکننده، خطا پذیر، غیر قابل انعطاف می‌شود)
 8. کلاس‌های کانکرت معمولاً بیشتر از یک بار یک مکان نمونه‌برداری (Instantiate) می‌شوند.
 9. بنابراین در صورتی که بخواهیم تغییر بدهیم باید تمامی نمونه‌برداری‌ها را در مکان‌های مختلف را تغییر دهیم. که این کار طاقت‌فرسا، سخت و خطاپذیر است.
-### چرا از Simple Factory استفاده می‌کنیم؟
+
+# چرا از Simple Factory استفاده می‌کنیم؟
 1. Multiple Clinets neeeding same types of object
 2. Ensure consistent object initialization.
 
@@ -16,13 +18,13 @@
 ![Simple Factory](img/SimpleFactory.jpg)
 ![Simple Factory Diagram](img/SimpleFactory.png)
 
-### Keywords:
+# Keywords:
 1. Depenency
 2. Loose Couple
 3. Concrete classes (When you see `new`, think `concrete`)
 4. Encapsulating object creation
 
-### مثال
+# مثال
 ```java
 public class PizzaStore {
 	SimplePizzaFactory factory;
@@ -69,7 +71,7 @@ public class SimplePizzaFactory {
 ```
 ![pizza Simple Factory](http://yuml.me/diagram/scruffy/class/330cfd3a.png)
 
-### اطلاعات بیشتر
+# اطلاعات بیشتر
 1. [Simple Factory Pattern Side by Side with Abstract Pattern](http://www.c-sharpcorner.com/UploadFile/mosessaur/simplefactorypattern03012006124722PM/simplefactorypattern.aspx)
 2. [Simple Factory](http://shamsmi.blogspot.fr/2007/08/simple-factory.html)
 3. ص ۱۱۹ Head First Design Patterns
