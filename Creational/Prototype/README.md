@@ -3,7 +3,7 @@
 انواع اشیائی که باید ساخته شوند را با استفاده از یک نمونهٔ اولیه، مشخص می‌کند و اشیاء جدید را با کپی کردن این نمونهٔ اولیه تولید می‌کند.
 
 # ساختار
-![Prototype UML](http://javaobsession.files.wordpress.com/2010/07/prototype-pattern1.png?w=700)
+![Prototype UML](http://javaobsession.files.wordpress.com/2010/07/prototype-pattern1.png)
 
 # شرح الگو
 در این الگو بدون این که نام کلاس اشیاء را بدانیم یا از جزئیات ساخت اشیاء مطلع باشیم با استفاده از کلون کردن آن‌ها را ایجاد می‌کنیم.
