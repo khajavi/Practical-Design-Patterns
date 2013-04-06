@@ -23,6 +23,12 @@
 
 متن کامل مثال: http://www.codeproject.com/Articles/331304/Understanding-and-Implementing-Abstract-Factory-Pa
 
-## بیشتر بخوانید
+# مثال‌های واقعی
+<div dir="ltr">
+- javax.xml.parsers.DocumentBuilderFactory#newInstance()
+- javax.xml.transform.TransformerFactory#newInstance()
+- javax.xml.xpath.XPathFactory#newInstance()
+
+# بیشتر بخوانید
 1. [Simple Factory vs. Factory Method vs. Abstract Factory](http://corey.quickshiftconsulting.com/1/post/2009/5/first-post.html)
 2. [Wikipedia: Abstract factory pattern](http://en.wikipedia.org/wiki/Abstract_factory_pattern)
