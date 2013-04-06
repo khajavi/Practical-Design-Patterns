@@ -25,6 +25,7 @@
 4. Encapsulating object creation
 
 # مثال
+<div dir="ltr">
 ```java
 public class PizzaStore {
 	SimplePizzaFactory factory;
