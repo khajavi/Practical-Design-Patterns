@@ -31,6 +31,10 @@
 # جنبه‌های منفی
 1. تا زمانی که سازندهٔ کلاس سینگلتون خصوصی‌ست، اشتقاق و زیرکلاس‌سازی امکان ناپذیر است.
 
+# مثال‌های واقعی
+<div dir="ltr">
+- java.lang.Runtime#getRuntime()
+- java.awt.Desktop#getDesktop()
 
 # بیشتر بخوانید
 1. http://stackoverflow.com/questions/86582/singleton-how-should-it-be-used
