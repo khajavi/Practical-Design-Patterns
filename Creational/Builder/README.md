@@ -27,6 +27,9 @@
 - نمایندهٔ شیء پیچیده‌ای را که توسط ConcreteBuilder ایجاد می‌شود.
 
 # مثال ۱ (ساخت مبدل متن)
+
+![TextConverter UML](http://jklunder.home.xs4all.nl/elisa/part05/Design%20Patterns/build096.gif)
+
 1. ASCII Converter
 2. TeX Converter
 3. PDF Converter
