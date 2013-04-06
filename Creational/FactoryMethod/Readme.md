@@ -55,7 +55,14 @@ Car car = factory.createMobile(مشخصات موبایل، نام موبایل،
 ```
 ![Mobile Factory](http://yuml.me/679b958b)
 
-## بیشتر بخوانید
+# مثال‌های واقعی
+- java.util.Calendar#getInstance()
+- java.util.ResourceBundle#getBundle()
+- java.text.NumberFormat#getInstance()
+- java.nio.charset.Charset#forName()
+- java.net.URLStreamHandlerFactory#createURLStreamHandler(String) (Returns singleton object per protocol)
+
+# بیشتر بخوانید
 1. کلاس SAXParserFactory
 2. http://javapapers.com/design-patterns/factory-method-pattern/
 3. http://stackoverflow.com/questions/9963090/factory-pattern-vs-factorymethod-pattern
