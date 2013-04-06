@@ -79,7 +79,14 @@ HouseBuilder builder = new KheshtiBuilder();
 Director director = new Director(builder);
 director.construct();
 
+# مثال‌های واقعی
+- java.lang.StringBuilder#append() (unsynchronized)
+- java.lang.StringBuffer#append() (synchronized)
+- java.nio.ByteBuffer#put() (also on CharBuffer, ShortBuffer, IntBuffer, LongBuffer, FloatBuffer and DoubleBuffer)
+- javax.swing.GroupLayout.Group#addComponent()
+- All implementations of java.lang.Appendable
+
 # بیشتر بخوانید:
-1. http://javapapers.com/design-patterns/builder-pattern/
+- http://javapapers.com/design-patterns/builder-pattern/
 
 
