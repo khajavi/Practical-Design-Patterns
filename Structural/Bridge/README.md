@@ -1,3 +1,4 @@
+<div dir="rtl">
 # هدف
 لایهٔ انتزاع را از لایهٔ پیاده‌سازی جدا می‌کند، بنابراین دو کلاس می‌توانند مستقلاً تغییر کنند.
 
@@ -18,14 +19,16 @@
 - تغییرات در لایهٔ پیاده‌سازی (که لایهٔ انتزاع را پیاده‌سازی می‌کند) نباید منجر به کامپایل مجدد کدِ کارخواه شود.
 
 برای طراحی این الگو، در کلاس انتزاعی، یک نمونه از کلاس پیاده‌سازی نگه می‌داریم. در این صورت قادر خواهیم بود که در زمان اجرا، پیاده‌سازی‌های متفاوتی را برای کلاس انتزاعی در نظر بگیریم. به کد زیر توجه کنید:
+<div dir="ltr">
 ```java
 Implementation implementation = new FirstImplementation();
 Abstraction abstraction = new Abstraction( implementation );
 abstraction.operation();
 ```
-
+<div dir="rtl">
 # مثال
 فرض کنید که می‌خواهیم کلاس قطارها را طراحی کنیم. دو نوع قطار داریم. قطارهای معمولی و قطارهای یک ریلی.
+<div dir="ltr">
 ```c++
 class Train {
 public: 
@@ -42,9 +45,9 @@ public:
 	virtual void move() { /* use twi track */ }
 };
 ```
-
+<div dir="rtl">
 فرض کنید بعد از پیاده‌سازی دو قطار بالا به قطارهای برقی هم نیاز پیدا کنیم. آنگاه مجبوریم کلاس‌ها را به شکل زیر تغییر دهیم:
-
+<div dir="ltr">
 ```c++
 class Train {
 public:
@@ -79,8 +82,9 @@ class DiselRail : public Rail {
   virtual void move() { /*  use disel engine on two tracks */ }
 };
 ```
+<div dir="rtl">
 کد بالا قابل نگهداری نیست و فاقد قابلیت استفادهٔ مجدد است. کد زیر الگوی Bridge را به کد بالا اعمال می‌کند و دو لایهٔ انتزاع `train transport` و `acceleration` را از هم جدا می‌کند.
-
+<div dir="ltr">
 ```c++
 class Train {
 public:
@@ -109,5 +113,3 @@ public:
 class ElectricEngine : public Accelerable { }
 class DiselEngine : public Accelerable{ }
 ```
-
-
