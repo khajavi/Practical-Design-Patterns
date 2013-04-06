@@ -6,7 +6,7 @@
 ![Builder Pattern UML](http://javaobsession.files.wordpress.com/2010/06/builder-pattern1.png)
 
 
-# زمانی استفاده که
+# زمانی استفاده کنید که
 - می‌خواهید روند ساخت (Construction) و نمایش (Representation) را مجزا و ایزوله کنید.
 - در روند ساخت یک شیء، بازنمایی‌های متفاوتی به کار گرفته شود.
 - نیاز به کنترل بیشتری برای روند ساخت اشیاء دارید.
