@@ -3,7 +3,7 @@
 یک واسط را به واسط مورد نظر کلاینت تبدیل می‌کند و اجازه می‌دهد تا کلاس‌ها با اینترفیس‌های متفاوت و ناسازگار با یکدیگر کار کنند.
 
 # ساختار
-# نسخهٔ کلاس (وراثت)
+# نسخهٔ کلاس (وراثت چندگانه)
 ![Adpater (Class Version)](http://javaobsession.files.wordpress.com/2010/07/adapter-pattern-class1.png)
 
 # نسخهٔ شیء (کامپوزیشن)
@@ -11,8 +11,9 @@
 
 # نکات طراحی
 راه‌های پیاده‌سازی:
-1. چندوراثتی (Multiple Inheritance): کلاس Adapter،  رابط Adaptee و Target را پیاده‌سازی می‌کند. (در جاوا از implement می‌توان به چند وراثتی دست یافت)
-2. ترکیب شی (Object Composition)؛ کلاس Adapter، رابط Target را پیاده‌سازی می‌کند و درخواست‌های Target را برای Adaptee ترجمه می‌کند.
+
+- چندوراثتی (Multiple Inheritance): کلاس Adapter،  رابط Adaptee و Target را پیاده‌سازی می‌کند. (در جاوا از implement می‌توان به چند وراثتی دست یافت)
+- ترکیب شی (Object Composition)؛ کلاس Adapter، رابط Target را پیاده‌سازی می‌کند و درخواست‌های Target را برای Adaptee ترجمه می‌کند.
 
 # اجزاء الگو
 ## Target
