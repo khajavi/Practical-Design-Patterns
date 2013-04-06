@@ -24,7 +24,9 @@
 - با استفاده از واسط Builder شیء را می‌سازد.
 
 ## Product
-- نمایندهٔ شیء پیچیده‌ای را که توسط ConcreteBuilder ایجاد می‌شود.
+- نمایندهٔ شیء پیچیده‌ای‌ست که توسط ConcreteBuilder ایجاد می‌شود. می‌توان قسمت Product را هم به دو قسمت تبدیل کرد.
+  1. ProductInterface 
+  2. ConcreteProduct
 
 # مثال ۱ (ساخت مبدل متن)
 
