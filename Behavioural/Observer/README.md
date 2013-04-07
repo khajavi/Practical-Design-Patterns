@@ -1,22 +1,33 @@
+<div dir="rtl">
+# هدف
+وابستگی یک-به-چند بین اشیاء تعریف می‌کند بنابراین وقتی یک شیء وضعیت‌اش را تغییر می‌دهد، تمامی اشیاء وابسته به آن از آن تغییر مطلع شده و به صورت خودکار به روز می‌شوند.
+
+# ساختار
+![Observer UML](http://www.dofactory.com/Patterns/Diagrams/observer.gif)
 
 
-# الگوی طراحی Observer
+# اجزاء الگو
+- Subject
+- Observer
+- ConcreteSubject
+- ConcreteObserver
 
-1. Publishers + Subscribers = Observer Pattern
-2. Subjects + Observers = Observer Pattern
 
-## Keywords: 
-1. Loos coupling
-2. one-to-many relationship
-2. minimized interdependency
+# نکات طراحی
+- Publishers + Subscribers = Observer Pattern
+- Subjects + Observers = Observer Pattern
+مفاهیم مرتبط
+- Loos coupling
+- one-to-many relationship
+- minimized interdependency
 
 این الگو زمانی اعمال می‌شود که Subject-ها و Observer-ها Loose Couple باشند.
 
-## Components
-1. Subject
-2. Observer
-3. ConcreteSubject
-4. ConcreteObserver
-
-
+# مثال‌های واقعی
+<div dir="ltr">
+- java.util.Observer/java.util.Observable (rarely used in real world though)
+- All implementations of java.util.EventListener (practically all over Swing thus)
+- javax.servlet.http.HttpSessionBindingListener
+- javax.servlet.http.HttpSessionAttributeListener
+- javax.faces.event.PhaseListener
 
