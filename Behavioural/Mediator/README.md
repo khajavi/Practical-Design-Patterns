@@ -13,6 +13,7 @@
 - ConcreteMediator
 - Colleague
 - ConcreteColleague
+
 # مثال
 - اتاق چت
 - برج مراقبت هواپیماها
