@@ -1,37 +1,41 @@
-# Strategy pattern (policy pattern)
-در الگوی طراحی استراتژی سعی می‌کنیم که رفتارهای غیرثابت و متفاوت `(استراتژی‌های متفاوت)` را از کلاس خارج کنیم و به طور مستقل آن‌ها را کپسوله کنیم. در این صورت هر کلاس، هر کدام از الگوریتم‌هایی که نیاز داشته باشند را درون خود استفاده می‌کنند. همچنین این الگو اجازه می‌دهد تا هر یک از کلاس‌ها هر وقت که بخواهند، `استراتژی` خودشان را تغییر دهند.
+<div dir="rtl">
+# هدف
+خانواده‌ای از الگوریتم ها را تعریف می‌کند، هر یک را کپسوله می‌کند و آن‌ها را جابه‌جا پذیر می‌کند. الگوی استراتژی اجازه می‌دهد که الگوریتم‌ها مستقل از کارخواهی که از آن‌ها استفاده می‌کند، تغییر کنند.
+
+# نام دیگر
+Policy Pattern
+
+# ساختار
+![Strategy Pattern](http://yuml.me/diagram/scruffy;/class/// Non-specific Strategy Class Diagram, [Caller]<>->[<<Interface>>;Algorithm], [<<Interface>>;Algorithm]^-.-[ConcreteAlgorithm1], [<<Interface>>;Algorithm]^-.-[ConcreteAlgorithm2])
+
+# Keywords
+- Behavioral Pattern
+- Strategy at runtime (Change Behavior at Runtime)
+- Composition (HAS-A is better than IS-A)
+
+# نکات طراحی
+- در الگوی طراحی استراتژی سعی می‌کنیم که رفتارهای غیرثابت و متفاوت `(استراتژی‌های متفاوت)` را از کلاس خارج کنیم و به طور مستقل آن‌ها را کپسوله کنیم. در این صورت هر کلاس، هر کدام از الگوریتم‌هایی که نیاز داشته باشند را درون خود استفاده می‌کنند. همچنین این الگو اجازه می‌دهد تا هر یک از کلاس‌ها هر وقت که بخواهند، `استراتژی` خودشان را تغییر دهند.
+
+- به انتخاب و تغییر رفتار (استراتژی) مناسب در زمان اجرا strategy at runtime می‌گوییم.
+- رفتارها و `استراتژی‌هایی` که طول ساختار وراثتی کلاس تغییر می‌کند را مشخص کنید و آن رفتارها را از کلاس خارج کنید. و آن‌ها را جداگانه کپسوله کنید.
+- آنچه که تغییر می‌کند را از آنچه ثابت می‌ماند جدا کنید.
+- مزیت `استراتژی` این است که اگر بخواهیم در طول توسعهٔ نرم‌افزار رفتارها و `استراتژی‌های` جدیدی تعریف کنیم، نیازی به تغییر کلاس‌های اصلی که از این رفتارهای استفاده می‌کنند نداریم.
 
 
-## Keywords
-1. Behavioral Pattern
-2. Strategy at runtime (Change Behavior at Runtime)
-3. Composition (HAS-A is better than IS-A)
-
-## نکات
-1. Strategy lets the algorithm vary independently from clients that use it.
-2. Strategy at runtime (algorithms can be selected at runtime)
-3. انتخاب رفتار و `استراتژی` مناسب در runtime
-4. رفتارها و `استراتژی‌هایی` که طول ساختار وراثتی کلاس تغییر می‌کند را مشخص کنید و آن رفتارها را از کلاس خارج کنید. و آن‌ها را جداگانه کپسوله کنید.
-6. Separating What changes from what stays the same.
-6. مزیت `استراتژی` این است که اگر بخواهیم در طول توسعهٔ نرم‌افزار رفتارها و `استراتژی‌های` جدیدی تعریف کنیم، نیازی به تغییر کلاس‌های اصلی که از این رفتارهای استفاده می‌کنند نداریم.
-
-## Participants
+# اجزاء
 1. Strategy
 2. ConcreateStrategy
 3. Context
 
-## Diagram
-![StrategyPattern](img/StrategyStructure.gif)
 
-![Strategy Pattern](http://yuml.me/diagram/scruffy;/class/// Non-specific Strategy Class Diagram, [Caller]<>->[<<Interface>>;Algorithm], [<<Interface>>;Algorithm]^-.-[ConcreteAlgorithm1], [<<Interface>>;Algorithm]^-.-[ConcreteAlgorithm2])
 
-## Client Code
+# Client Code
 ```
 Context context = new Context(new ConcreateStrategy1());
 context.AlgorithmInterface();
 ```
 
-##مثال ۱
+#مثال ۱
 فرض کنید که کلاسی داریم به نام `Car()` با متودی به نام `run()` آنگاه می‌توانیم آن را به صورت زیر پیاده کنیم:
 ```
 Car car = new Car();
@@ -75,10 +79,19 @@ Class Car()
 
 اولی: استفاده از `الگوی استراتژی` یعنی رفتارهای متغیر را از رفتارهای ثابت جدا کنیم و رفتارهای متغیر را ساختار وراثتی کلاس خارج کنیم. و آن‌ها را کپسوله کنیم.
 
-## مثال ۳
+# مثال ۳
 فرض کنید که قرار است کلاسی بسازیم که آرایهٔ ورودی را مرتب کند. می‌خواهیم بر اساس نوع داده‌ها، ترتیب داده‌ها و پراکندگی داده‌ها الگوریتم مرتب‌سازی مناسب را در run-time اعمال کنیم. برای انجام چنین کاری می‌توانیم از الگوی استراتژی استفاده کنیم.
 
-## اطلاعات بیشتر
+# مثال‌های واقعی
+
+<div dir="ltr">
+- java.util.Comparator#compare(), executed by among others Collections#sort().
+- javax.servlet.http.HttpServlet, the service() and all doXXX() methods take HttpServletRequest and HttpServletResponse and the implementor has to process them (and not to get hold of them as instance variables!).
+- javax.servlet.Filter#doFilter()
+<div dir="rtl">
+# اطلاعات بیشتر
+
+<div dir="ltr">
 1. [How does the Strategy Pattern work?](http://stackoverflow.com/questions/91932/how-does-the-strategy-pattern-work)
 2. ص ۳۴۹ کتاب Gang of for
 3. ص ۱۲ کتاب Head First Design Pattern
