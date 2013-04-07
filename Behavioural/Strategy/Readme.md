@@ -30,7 +30,7 @@ Policy Pattern
 # Client Code
 
 <div dir="ltr">
-```
+```java
 Context context = new Context(new ConcreateStrategy1());
 context.AlgorithmInterface();
 ```
@@ -40,7 +40,7 @@ context.AlgorithmInterface();
 فرض کنید که کلاسی داریم به نام `Car()` با متودی به نام `run()` آنگاه می‌توانیم آن را به صورت زیر پیاده کنیم:
 
 <div dir="ltr">
-```
+```java
 Car car = new Car();
 car.run();
 ```
@@ -48,7 +48,7 @@ car.run();
 
 حالا اگر بخواهیم هنگامی که ماشین روشن است، رفتار ماشین را تغییر دهیم چه کار کنیم؟ مثلاً بخواهیم در نرم‌افزار بازی دکمهٔ `Boost‍` را شبیه‌سازی کنیم. چندین روش وجود دارد یکی این که از متغییرهای شرطی و ... استفاده کنیم راه دیگر استفاده از `الگوی طراحی استراتژی` هست. مثلاً‌ می‌تواین حین بازی موتور میاشین را عوض کنیم!! مثال:
 <div dir="ltr">
-```
+```java
 Class Car()
 {
     this.motor = new Motor(this) 
@@ -95,6 +95,7 @@ Class Car()
 - javax.servlet.http.HttpServlet, the service() and all doXXX() methods take HttpServletRequest and HttpServletResponse and the implementor has to process them (and not to get hold of them as instance variables!).
 - javax.servlet.Filter#doFilter()
 <div dir="rtl">
+
 # اطلاعات بیشتر
 
 <div dir="ltr">
