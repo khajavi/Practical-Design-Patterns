@@ -1,14 +1,23 @@
 <div dir="rtl">
 # هدف
-Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+با دادن بیشتر از یک شیء برای هندل کردن درخواست از جفتگری (کوپلینگ) فرستندهٔ درخواست و گیرندهٔ درخواست اجتناب می‌کند. اشیاء گیرنده را زنجیر می‌کند و درخواست را در امتداد زنجیر گذر می‌دهد تا زمانی که یکی از اشیاء آن را هندل کند.
 
 # ساختار
-![UML](http://teddyma.cnblogs.com/images/cnblogs_com/teddyma/gof36.JPG)
+## Class Diagram
+![class diagram](http://javaobsession.files.wordpress.com/2010/07/chain-of-responsibility-pattern.png)
 
-# Participants
-1. Handler
-2. ConcreteHandler
-3. Client
+## Sequence diagram
+![sequence diagram](http://javaobsession.files.wordpress.com/2010/07/chain-of-responsibility-pattern-sd.png)
+
+# اجزاء الگو
+- Handler
+- ConcreteHandler
+- Client
+
+# نکات طراحی
+از این الگو زمانی استفاده کنید که
+- لازم است درخواست‌ها توسط چندین شیء که در زمانِ اجرا مشخص می‌شوند، هندل شوند.
+- درخواست‌ها باید به روش «پاسخ بده یا واگذار کن» مدیریت شوند.
 
 # مثال ۱
 فرض کنید می‌خواهیم پرونده‌ای که رمزنگاری شده است را رمزگشایی کنیم. ما ۱۰ الگوریتم متفاوت برای رمزگشایی این پرونده طراحی کرده‌ایم. مسلماً بهترین راه این است که از الگوریتم‌های فراگیر، آسان و آن‌هایی که احتمال می‌دهیم زودتر پرونده‌مان را رمزنگاری می‌کنند شروع کنیم. بنابراین طبق سیاست‌هایی که داریم این ۱۰ الگوریتم را مرتب می‌کنیم. حال توسط `الگوی طراحی زنجیرهٔ پاسخگویی` این ۱۰ الگوریتم را به این پرونده اعمال می‌کنیم تا بالاخره یکی از این الگوریتم‌ها بتوانند پرونده‌مان را رمزگشایی کنند. توجه این که ممکن است هیچ کدام از این الگوریتم‌ها نتوانند پرونده را رمزگشایی کنند.
@@ -16,6 +25,11 @@ Avoid coupling the sender of a request to its receiver by giving more than one o
 # مثال ۲
 یک مثال معروف از الگوی طراحی زنجیرهٔ پاسخگویی، مبحث مدیریت استناء‌ها در زبان‌های برنامه‌نویسی شیء‌گرا مثل C++ و جاوا است.
 
+# مثال‌های واقعی
+<div dir="ltr">
+- java.util.logging.Logger#log()
+- javax.servlet.Filter#doFilter()
+<div dir="rtl">
 # اطلاعات بیشتر
 1. [پویش پرونده با فرمت‌های متفاوت](http://blog.sanaulla.info/2012/09/23/simple-example-to-illustrate-chain-of-responsibility-design-pattern/)
 2. [مدیریت رایانامه‌های متفاوت](http://java.dzone.com/articles/design-patterns-uncovered-chain-of-responsibility)
