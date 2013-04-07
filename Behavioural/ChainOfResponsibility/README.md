@@ -30,7 +30,9 @@
 - java.util.logging.Logger#log()
 - javax.servlet.Filter#doFilter()
 <div dir="rtl">
+
 # اطلاعات بیشتر
 1. [پویش پرونده با فرمت‌های متفاوت](http://blog.sanaulla.info/2012/09/23/simple-example-to-illustrate-chain-of-responsibility-design-pattern/)
 2. [مدیریت رایانامه‌های متفاوت](http://java.dzone.com/articles/design-patterns-uncovered-chain-of-responsibility)
 3. [دو مثال خوب دیگر، شناسایی انوع پول و سکه و شناسایی اعداد](http://javapapers.com/design-patterns/chain-of-responsibility-design-pattern/)
+
