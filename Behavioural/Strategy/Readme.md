@@ -94,6 +94,7 @@ Class Car()
 - java.util.Comparator#compare(), executed by among others Collections#sort().
 - javax.servlet.http.HttpServlet, the service() and all doXXX() methods take HttpServletRequest and HttpServletResponse and the implementor has to process them (and not to get hold of them as instance variables!).
 - javax.servlet.Filter#doFilter()
+
 <div dir="rtl">
 
 # اطلاعات بیشتر
