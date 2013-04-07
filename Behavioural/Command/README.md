@@ -1,23 +1,33 @@
 <div dir="rtl">
 
-# تعریف الگوی طراحی Command
-Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
-
-1. کپسوله کردن درخواست‌ها
-2. پارامتری کردن کلاینت به طوری که بتواند درخواست‌های متفاوتی را دریافت کند. برای مثال پیشخدمت در طول روز درخواست‌های متفاوتی را دریافت می‌کند و یا در مثال ریموت کنترل، کنترلر می‌تواند درخواست‌های متفاوتی را دریافت کند.
-
-# مشارکت کننده‌ها
-1. Command: رابطی برای اجرای عملیات بیان می‌کند.
-2. ConcreteCommand 
-3. Client: اشیاء ConcreteCommand را می‌سازد و receiverهای آن‌ها را تنظیم می‌کند.
-4. Invoker: از Command می‌خواهد که درخواست‌اش را حمل کند.
-5. Receiver
+# هدف
+درخواست را به عنوان یک شیء کپسوله می‌کند، از این رو اجازه می‌دهد تا بتوانید کارخوه‌ها را با درخواست‌ها، صف‌ها و یا لاگ‌های متفاوت پارامتری کنید.
 
 # ساختار
-![Structure](http://www.cs.mcgill.ca/~hv/classes/CS400/01.hchen/doc/command/command.gif)
+# Class Digaram
+![Class Digaram](http://javaobsession.files.wordpress.com/2010/07/command-pattern.png)
 
-# مراحل
-![sequence](http://www.cs.mcgill.ca/~hv/classes/CS400/01.hchen/doc/command/collaboration.gif)
+# Sequence Diagram
+![Sequence Diagram](http://javaobsession.files.wordpress.com/2010/07/command-pattern-sd.png)
+
+# نکات طراحی
+- کپسوله کردن درخواست‌ها
+- پارامتری کردن کلاینت به طوری که بتواند درخواست‌های متفاوتی را دریافت کند. برای مثال پیشخدمت در طول روز درخواست‌های متفاوتی را دریافت می‌کند و یا در مثال ریموت کنترل، کنترلر می‌تواند درخواست‌های متفاوتی را دریافت کند.
+
+از این الگو زمانی استفاده کنید که
+- نیاز به پشتیبانی از گزارش‌نویسی (logging) دارید.
+- لازم است تاریخچه را مدیریت کنید. (مثل عملیات undo/redo)
+- نیاز است تا از تراکنش‌ها پشتیبانی کنید.
+- نیاز به callback دارید.
+- نیاز است تا درخواست‌ها در زمان‌های متفاوت و یا در ترتیب‌های متفاوت (صف، پشته و ...) هندل شوند.
+- منبع درخواست باید از شیء‌ای که واقعاً درخواست را هندل می‌کند، جدا (دیکوپلینگ) شوند.
+
+# اجزاء الگو
+- Command: رابطی برای اجرای عملیات بیان می‌کند.
+- ConcreteCommand 
+- Client: اشیاء ConcreteCommand را می‌سازد و receiverهای آن‌ها را تنظیم می‌کند.
+- Invoker: از Command می‌خواهد که درخواست‌اش را حمل کند.
+- Receiver
 
 # کاربردها
 1. Thread pools: رجوع شود به java.lang.Runnable
@@ -62,3 +72,8 @@ Encapsulate a request as an object, thereby letting you parameterize clients wit
 3. سرآشپز از روی درخواست غذای مورد نظر مشتری را تهیه می‌کند. `makeBurger()` و `makeShake()`
 
 در این روش پیشخدمت از جزئیات با خبر نیست و فقط دستور مشتری را به سرآشپزها منتقل می‌کند.
+
+# مثال‌های واقعی
+<div dir="ltr">
+- All implementations of java.lang.Runnable
+- All implementations of javax.swing.Action
