@@ -28,16 +28,19 @@
 4. کامپوننت‌های خودتان (HAS-A)
 
 هیچ کدام یک از راهنماهای بالا عنوان نمی‌کند که شما می‌توانید متدهای یک شیء که توسط متدهای دیگر برگردانده می‌شود را صدا بزنید، مثلاً کد زیر خلاف این اصل است:
+<div dir="ltr">
 ```Java
 public float getTemp() {
 	return station.getThermometer().getTemperature();
 }
 ```
+<div dir="rtl">
 یا مثلاً کد معروف جاوا:
+<div dir="ltr">
 ```Java
 System.out.println();
 ```
-
+<div dir="rtl">
 # مثال‌های واقعی
 <div dir="ltr">
 - javax.faces.context.FacesContext, it internally uses among others the abstract/interface types LifeCycle, ViewHandler, NavigationHandler and many more without that the enduser has to worry about it (which are however overrideable by injection).
