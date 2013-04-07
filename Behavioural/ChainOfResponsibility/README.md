@@ -29,6 +29,7 @@
 <div dir="ltr">
 - java.util.logging.Logger#log()
 - javax.servlet.Filter#doFilter()
+
 <div dir="rtl">
 
 # اطلاعات بیشتر
