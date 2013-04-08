@@ -3,7 +3,7 @@
 اعمالی که باید روی عناصری از شیء اجرا شود را ارائه می‌کند. این الگو اجازه را می‌دهد تا اعمال جدیدی تعریف کنید بدون اینکه کلاس‌هایی که این اعمال روی آن‌ها انجام می‌شود را تغییر دهید.
 
 # ساختار
-![Visitor Pattern](http://www.dofactory.com/Patterns/Diagrams/visitor.gif)
+![Visitor Pattern](http://javaobsession.files.wordpress.com/2010/07/visitor-pattern1.png)
 
 # نکات طراحی
 
