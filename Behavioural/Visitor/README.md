@@ -86,6 +86,7 @@ int main() {
 }
 ```
 <div dir="rtl">
+مثال از اینجا: http://stackoverflow.com/a/255300/225052
 
 # مثال‌های واقعی
 <div dir="ltr">
