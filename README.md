@@ -58,4 +58,7 @@ Design-Patterns
 - [Visitor](Behavioural/Visitor): اعمالی که باید روی عناصری از شیء اجرا شود را ارائه می‌کند. این الگو اجازه را می‌دهد تا اعمال جدیدی تعریف کنید بدون اینکه کلاس‌هایی که این اعمال روی آن‌ها انجام می‌شود را تغییر دهید.
 
 
-
+# معرفی کتاب
+<div dir="rtl">
+- [Gang Of Four (GoF) : Design Patterns Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Help Ralph Johnson, and John Vlisides.](http://c2.com/cgi/wiki?GangOfFour)
+- [Head First Design Patterns by Eric and Elisabeth Freeman.](http://c2.com/cgi/wiki?HeadFirstDesignPatterns)
