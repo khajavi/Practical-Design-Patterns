@@ -3,7 +3,7 @@
 به شیء این اجازه را می‌دهد که وقتی وضعیت درونی‌اش تغییر کرد، رفتارش را تغییر دهد. به نظر می‌رسد که شیء کلاس خود را عوض می‌کند.
 
 # ساختار
-![State Pattern UML](http://www.dofactory.com/Patterns/Diagrams/state.gif)
+![State Pattern UML](http://i.imgur.com/fSlH2TY.png)
 
 # اجزاء الگو
 - Context
