@@ -36,3 +36,4 @@
 2. [C++ example of Flyweight Design Pattern](http://advancedcppwithexamples.blogspot.de/2010/10/c-example-of-flyweight-design-pattern.html)
 3. [Source Making flyweight design pattern](http://sourcemaking.com/design_patterns/flyweight)
 4. [Flyweight Design Pattern](http://dofactory.com/Patterns/PatternFlyweight.aspx)
+5. [مثالی از بازی سودوکو پیاده‌شده توسط الگوی flyweight](http://cgeers.com/2008/03/08/flyweight-pattern/)
