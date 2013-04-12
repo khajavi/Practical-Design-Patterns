@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<script type="text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+			var Model = function() {
+				function _getInputText() {
+					return $("#inputtext").val();
+				};
+				
+				function _setInputText( value ) {
+					$("#inputtext").val( value );
+				};
+
+				return {
+					getInputText : _getInputText,
+					setInputText : _setInputText
+				};
+			};
+	
+		var Controller = function( pModel ) {
+			var _model = pModel || new Model();
+
+			function _fill_clicked() {
+				_model.setInputText("Hello, World!");
+			};
+
+			function _clear_clicked() {
+				_model.setInputText("");
+			};
+
+			function _init() {
+				$("#fillbutton").click( function() { _fill_clicked(); } );
+				$("#clearbutton").click( function() { _clear_clicked(); } );
+			};
+
+			return {
+				init : _init, 
+				model : _model
+			};
+		};
+
+		$(document).ready( function() {
+			new Controller().init();
+		} );
+
+		</script>
+	</head>
+		<input type = "text" id = "inputtext" name = "inputtext" value = "" />
+		<input type = "button" id = "fillbutton" value = "Fill with the text" />
+		<input type = "button" id = "clearbutton" value = "Clear" />
+	<body>
+
+	</body>
+</html>
+
