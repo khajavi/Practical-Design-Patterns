@@ -1,3 +1,4 @@
+<div dir="rtl">
 # هدف
 الگوی معماریِ MVC، سه مفهوم ذخیره‌سازی، نمایش و به‌روزآوری داده‌ها را به سه مؤلفه تقسیم می‌کند و به طوری که هر کدام به طور مجزا قابل تست باشند.
 
@@ -64,4 +65,4 @@
 
 # منابع
 1. [OpenGL Windows GUI Application](http://www.songho.ca/opengl/gl_mvc.html)
-2. [](http://msdn.microsoft.com/en-us/library/ff649643.aspx)
+2. [Microsoft Model-View-Controller](http://msdn.microsoft.com/en-us/library/ff649643.aspx)
