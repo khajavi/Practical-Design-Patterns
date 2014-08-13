@@ -32,3 +32,4 @@
 # بیشتر بخوانید
 1. [Simple Factory vs. Factory Method vs. Abstract Factory](http://corey.quickshiftconsulting.com/1/post/2009/5/first-post.html)
 2. [Wikipedia: Abstract factory pattern](http://en.wikipedia.org/wiki/Abstract_factory_pattern)
+3. [Core J2EE Patterns - Data Access Object](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html)

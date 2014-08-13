@@ -67,6 +67,7 @@ Car car = factory.createMobile(مشخصات موبایل، نام موبایل،
 2. http://javapapers.com/design-patterns/factory-method-pattern/
 3. http://stackoverflow.com/questions/9963090/factory-pattern-vs-factorymethod-pattern
 4. http://c2.com/cgi/wiki?FactoryMethodPattern
+5. [Core J2EE Patterns - Data Access Object](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html)
 
 
 
