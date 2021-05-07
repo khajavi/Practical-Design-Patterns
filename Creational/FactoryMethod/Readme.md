@@ -49,10 +49,12 @@ createMobile()
 3. ...
 
 ## Client
+</div>
 ```
 Factory  factory =  new NokiaFactory()
-Car car = factory.createMobile(مشخصات موبایل، نام موبایل، مثل رنگ و ...)
+Mobile mobile = factory.createMobile(مشخصات موبایل، نام موبایل، مثل رنگ و ...)
 ```
+<div dir="rtl">
 ![Mobile Factory](http://yuml.me/679b958b)
 
 # مثال‌های واقعی
